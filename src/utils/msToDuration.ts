@@ -1,4 +1,4 @@
-export default function (ms: number): string {
+export function msToDuration(ms: number): string {
   const o = Math.floor((ms / 220752e6) % 999),
     t = Math.floor((ms / 6048e5) % 51),
     r = Math.floor((ms / 864e5) % 7),

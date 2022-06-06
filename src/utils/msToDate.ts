@@ -1,4 +1,4 @@
-export default function (ms: number) {
+export function msToDate(ms: number) {
   const e = new Date(ms),
     g =
       1 === e.getDate().toString().length
