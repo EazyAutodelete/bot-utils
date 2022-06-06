@@ -1,4 +1,4 @@
-export const FilterFlags = {
+export default {
   FLAGS: {
     PINNED: "pinned",
     NOT_PINNED: "not_pinned",
