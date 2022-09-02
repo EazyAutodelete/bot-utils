@@ -1,6 +1,6 @@
 {
   "name": "@eazyautodelete/bot-utils",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "Utility library",
   "main": "dist/index.js",
   "scripts": {
