@@ -1,4 +1,9 @@
-export default function msToDate(ms: number) {
+/**
+ * Returns a string with the date and time in the format YYYY.MM.DD HH:MM:SS
+ * @param {number} ms milliseconds
+ * @returns {string} date
+ */
+export default function msToDate(ms: number): string {
   const e = new Date(ms),
     g =
       1 === e.getDate().toString().length
