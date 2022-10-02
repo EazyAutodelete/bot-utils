@@ -12,7 +12,10 @@ export default async function shardsEval(
 ): Promise<any[]> {
   return await Promise.all(
     shards.map(
-      async s => await bot.client.shard?.broadcastEval(code, { shard: s }).catch((r: string) => bot.logger.error(r))
+      async s =>
+        await bot.client.shard
+          ?.broadcastEval(code, { shard: s })
+          .catch((r: string) => bot.logger.error(r))
     )
   );
 }
