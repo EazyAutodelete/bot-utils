@@ -1,6 +1,6 @@
 {
   "name": "@eazyautodelete/bot-utils",
-  "version": "1.0.12",
+  "version": "1.1.0",
   "description": "Utility library",
   "main": "dist/index.js",
   "scripts": {
@@ -38,5 +38,9 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://npm.pkg.github.com/"
   }
 }

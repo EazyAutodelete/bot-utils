@@ -4,5 +4,5 @@
  * @returns {number} color as integer
  */
 export default function colorToInt(hex: string): number {
-  return parseInt(hex as string, 16);
+  return parseInt(hex.replaceAll("#", ""), 16);
 }
