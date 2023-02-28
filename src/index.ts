@@ -9,3 +9,4 @@ export { default as getColor } from "./utils/getColor";
 export { default as getReadyShards } from "./utils/getReadyShards";
 export { default as uppercaseFirst } from "./utils/uppercaseFirst";
 export { default as randomInt } from "./utils/randomInt";
+export { default as UtilArray } from "./utils/UtilArray";
