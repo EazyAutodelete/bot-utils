@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.1](https://github.com/EazyAutodelete/bot-utils/compare/v1.2.0...v1.2.1) (2023-02-28)
+
+
+### Bug Fixes
+
+* **export:** export utilarray oops ([214afff](https://github.com/EazyAutodelete/bot-utils/commit/214afffd6f407fef30283d4bc103a297dacc317a))
+
 ## 1.2.0 (2023-02-28)
 
 
