@@ -9,8 +9,9 @@ class UtilArray<T> extends Array<T> {
    */
   innerFilter(fn: (value: T, index: number, array: T[]) => unknown): UtilArray<T> {
     for (let i = 0; i < this.length; i++) {
-      if (!fn(this[i], i, this)) {
-        this.splice(i, 1);
+      const element = this[i];
+      if (!fn(element, i, this)) {
+        this.remove(element);
         i--;
       }
     }
