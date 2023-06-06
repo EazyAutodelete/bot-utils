@@ -3,6 +3,21 @@
  */
 class UtilArray<T> extends Array<T> {
   /**
+   * Filters the array and returns the filtered array
+   * @param fn Callback function to execute on each value in the array
+   * @returns UtilArray
+   */
+  innerFilter(fn: (value: T, index: number, array: T[]) => unknown): UtilArray<T> {
+    for (let i = 0; i < this.length; i++) {
+      if (!fn(this[i], i, this)) {
+        this.splice(i, 1);
+        i--;
+      }
+    }
+
+    return this;
+  }
+  /**
    * Remove an item from the array
    * @param item The item to remove from the array
    * @returns True if the item was removed, false if the item was not found in the array
