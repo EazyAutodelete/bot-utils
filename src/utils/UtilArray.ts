@@ -21,6 +21,7 @@ class UtilArray<T> extends Array<T> {
 
     return this;
   }
+
   /**
    * Remove an item from the array
    * @param itemOrId The item to remove from the array
@@ -37,6 +38,54 @@ class UtilArray<T> extends Array<T> {
    * console.log(array); // [1, 2, 3, 4, 5]
    */
   remove(itemOrId: any) {
+    let index = this.indexOf(itemOrId) || this.findIndex((i: any) => i.id === itemOrId);
+    if (index >= 0) {
+      this.splice(index, 1);
+      return true;
+    }
+    return false;
+  }
+
+  /**
+   * Remove an item from the array
+   * @param itemOrId The item to remove from the array
+   * @returns True if the item was removed, false if the item was not found in the array
+   * @example
+   * let array = [1, 2, 3, 4, 5];
+   * let removed = array.remove(3);
+   * console.log(removed); // true
+   * console.log(array); // [1, 2, 4, 5]
+   * @example
+   * let array = [1, 2, 3, 4, 5];
+   * let removed = array.remove(6);
+   * console.log(removed); // false
+   * console.log(array); // [1, 2, 3, 4, 5]
+   */
+  delete(itemOrId: any) {
+    let index = this.indexOf(itemOrId) || this.findIndex((i: any) => i.id === itemOrId);
+    if (index >= 0) {
+      this.splice(index, 1);
+      return true;
+    }
+    return false;
+  }
+
+  /**
+   * Remove an item from the array
+   * @param itemOrId The item to remove from the array
+   * @returns True if the item was removed, false if the item was not found in the array
+   * @example
+   * let array = [1, 2, 3, 4, 5];
+   * let removed = array.remove(3);
+   * console.log(removed); // true
+   * console.log(array); // [1, 2, 4, 5]
+   * @example
+   * let array = [1, 2, 3, 4, 5];
+   * let removed = array.remove(6);
+   * console.log(removed); // false
+   * console.log(array); // [1, 2, 3, 4, 5]
+   */
+  del(itemOrId: any) {
     let index = this.indexOf(itemOrId) || this.findIndex((i: any) => i.id === itemOrId);
     if (index >= 0) {
       this.splice(index, 1);
