@@ -50,8 +50,17 @@ class UtilArray<T> extends Array<T> {
    * @param itemOrId The item to check for
    * @returns True if the array has the item, false if not
    */
-  has(itemOrId: any) {
-    return this.includes(itemOrId) || this.find((i: any) => i.id === itemOrId);
+  has(itemOrId: any, fromIndex?: number | undefined): boolean {
+    return super.includes(itemOrId, fromIndex) || !!this.find((i: any) => i.id === itemOrId);
+  }
+
+  /**
+   * Check if the array has an item
+   * @param itemOrId The item to check for
+   * @returns True if the array has the item, false if not
+   */
+  includes(itemOrId: any, fromIndex?: number | undefined): boolean {
+    return super.includes(itemOrId, fromIndex) || !!this.find((i: any) => i.id === itemOrId);
   }
 
   /**
