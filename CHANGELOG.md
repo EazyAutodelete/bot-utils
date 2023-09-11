@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.4.0](https://github.com/EazyAutodelete/bot-utils/compare/v1.3.0...v1.4.0) (2023-09-11)
+
+
+### Features
+
+* **UtilArray:** add .has method ([8c3eeca](https://github.com/EazyAutodelete/bot-utils/commit/8c3eeca2708c48a0a875161f4d6ecdad86f26af4))
+* **UtilArray:** edit .customize method to work with ids ([7181bde](https://github.com/EazyAutodelete/bot-utils/commit/7181bde09c7e176db3e480a170bdb1ada8995fe5))
+
 ## [1.3.0](https://github.com/EazyAutodelete/bot-utils/compare/v1.2.1...v1.3.0) (2023-09-11)
 
 
