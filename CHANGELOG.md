@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.5.0](https://github.com/EazyAutodelete/bot-utils/compare/v1.4.0...v1.5.0) (2023-09-11)
+
+
+### Features
+
+* **UtilArray:** more method names ([3fda9f6](https://github.com/EazyAutodelete/bot-utils/commit/3fda9f6c2523735eb3d3b039aa4d80e3fb99a809))
+* **UtilArray:** more method names ([a730e05](https://github.com/EazyAutodelete/bot-utils/commit/a730e0596d7e1cf58f8b90398d82fa1b584e761c))
+
 ## [1.4.0](https://github.com/EazyAutodelete/bot-utils/compare/v1.3.0...v1.4.0) (2023-09-11)
 
 
