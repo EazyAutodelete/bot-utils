@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/EazyAutodelete/bot-utils/compare/v1.2.1...v1.3.0) (2023-09-11)
+
+
+### Features
+
+* add innerFilter ([9ee3f45](https://github.com/EazyAutodelete/bot-utils/commit/9ee3f459b889043551089675b653452284e71b3a))
+* add support to delete by ids ([8c87026](https://github.com/EazyAutodelete/bot-utils/commit/8c87026fb827e59970b61d2dcf2b336633fa96af))
+
 ### [1.2.1](https://github.com/EazyAutodelete/bot-utils/compare/v1.2.0...v1.2.1) (2023-02-28)
 
 
