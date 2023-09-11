@@ -2,6 +2,9 @@
  * Array with utility methods
  */
 class UtilArray<T> extends Array<T> {
+  constructor(...items: T[]) {
+    super(...items);
+  }
   /**
    * Filters the array and returns the filtered array
    * @param fn Callback function to execute on each value in the array
@@ -20,7 +23,7 @@ class UtilArray<T> extends Array<T> {
   }
   /**
    * Remove an item from the array
-   * @param item The item to remove from the array
+   * @param itemOrId The item to remove from the array
    * @returns True if the item was removed, false if the item was not found in the array
    * @example
    * let array = [1, 2, 3, 4, 5];
@@ -33,8 +36,8 @@ class UtilArray<T> extends Array<T> {
    * console.log(removed); // false
    * console.log(array); // [1, 2, 3, 4, 5]
    */
-  remove(item: any) {
-    let index = this.indexOf(item);
+  remove(itemOrId: any) {
+    let index = this.indexOf(itemOrId) || this.findIndex((i: any) => i.id === itemOrId);
     if (index >= 0) {
       this.splice(index, 1);
       return true;
@@ -90,7 +93,7 @@ class UtilArray<T> extends Array<T> {
 
   /**
    * Add an item to the array if it does not already exist
-   * @param item The item to add to the array
+   * @param itemOrId The item to add to the array
    * @returns The item that was added to the array
    * @example
    * let array = [1, 2, 3, 4, 5];
@@ -101,11 +104,11 @@ class UtilArray<T> extends Array<T> {
    * array.addIfNotExists(6);
    * console.log(array); // [1, 2, 3, 4, 5, 6]
    */
-  addIfNotExists(item: T) {
-    if (!this.includes(item)) {
-      this.push(item);
+  addIfNotExists(itemOrId: T) {
+    if (!this.includes(itemOrId) && !this.find((i: any) => i.id === itemOrId)) {
+      this.push(itemOrId);
     }
-    return item;
+    return itemOrId;
   }
 }
 
