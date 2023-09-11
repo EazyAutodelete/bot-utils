@@ -100,7 +100,9 @@ class UtilArray<T> extends Array<T> {
    * @returns True if the array has the item, false if not
    */
   has(itemOrId: any, fromIndex?: number | undefined): boolean {
-    return super.includes(itemOrId, fromIndex) || !!this.find((i: any) => i.id === itemOrId);
+    return (
+      super.includes(itemOrId, fromIndex) || !!this.find((i: any) => i.id === itemOrId)
+    );
   }
 
   /**
@@ -109,7 +111,9 @@ class UtilArray<T> extends Array<T> {
    * @returns True if the array has the item, false if not
    */
   includes(itemOrId: any, fromIndex?: number | undefined): boolean {
-    return super.includes(itemOrId, fromIndex) || !!this.find((i: any) => i.id === itemOrId);
+    return (
+      super.includes(itemOrId, fromIndex) || !!this.find((i: any) => i.id === itemOrId)
+    );
   }
 
   /**
