@@ -46,6 +46,15 @@ class UtilArray<T> extends Array<T> {
   }
 
   /**
+   * Check if the array has an item
+   * @param itemOrId The item to check for
+   * @returns True if the array has the item, false if not
+   */
+  has(itemOrId: any) {
+    return this.includes(itemOrId) || this.find((i: any) => i.id === itemOrId);
+  }
+
+  /**
    * Remove an item from the array by index
    * @param index The index of the item to remove from the array
    * @param count The number of items to remove from the array
